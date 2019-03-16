@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "playgatsby",
+  "private_key_id": "b34c0ecb038bd8089cf5c07d4bbb8d75995f2867",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCm1tV/j51zocxC\njocfzYODMIEDGSApsmr331xRPbkRxsinCZYvqUmAi9JHIG3lHHUPjxs79kAXB2DN\nhA3F8Y7kWHEOa0KUK1xEIE6qMV3htM/xxoum0jvQXIPOctv0g+9YriWvaaKjUZai\nWzHWzdnVAlP5yr0Hi56r6ew+mUMmKUEqGdVfzPccCV1hLAQW29edlJL0libdP2Fw\nT2IowUnc48d3TUBaqVrRmyG+TrXeaC0QrUYN5IsFjffSa15XvTheo5luhs4bjteR\nNunGI7ScO6UQGro2r+jDC7bi3TlDOc+3qAU1ucyDWBVOGnUPgDXSQNDUQGcVSdR+\nvCiO9oAdAgMBAAECggEADXTA0fG9l3yqeoi/zbkX3Q4dragKX8qP1Y+ahMPnaA9i\nEhTUG+J5tugwDMQJEQQ/TcKzRd4J08Go1VKMANXHelPGxIyymTw5DBaV+aSTJ5fb\neKrUix8kK1021UEOy/UTKhIboH7y2tzC+zPDPImsQsGWD8zB+7iPUtrCTtcyIwLp\n4KfFRLuGubLZA6+hLAHUznTaTXz2BcOPfQa+a6ARCPIICIXzHI2YTXKujEqjrLgO\n52vz+SbsbUqM7Gy17Bcy4gMprJj42PAB9tGm/uYeTui0UbhIRVaEDrm23Kv5fRsx\nF8RUBojnTOXWZ94eDhoQmU9P9C58xP3+mYxyb3Y0kQKBgQDdFKVAY31V25eJ6DpJ\naPJOQYzQovs/VYgRIPbxgTcfcKPwymyX5LeVPnxnnZf/x8e4P1h4in4Q+fxzNYjF\nYtpQO1MPV3zjGMAtL+2sQPAnG4ovkrEe1P6ClYej8YyNPNxyKWBYKqSNLYwRfqNi\nQcrFus2SsxXiTMr0hIL8mCPfUQKBgQDBMPIPpt/pQmcQVn1tKDo1kfOlrcuBaYnx\n4A+741FSqEDntWogRP5oTfKX755jTPG4LPWpup4uk9uDCj0D+hlbnTQylbSxOUa1\nk4RDiRg6HQgLZBPe13pipIZPS2ghKoXL7z6wksf1LuADxrjV/IZQ2MuhcJwVDSKk\nxGBtPjFZDQKBgAC2N038xAOJwHQmNkHUP6t21JA7ZhmvGdAMTh867kWApFZ7IFxg\n1SJ64AWpYTrmlsMGGS/SKlO9qk1op7cS+Wb2ue67tmA4zS2YEOjUELHfidNbYoyZ\n3PPorVYeyfgOcRtA/Nlr0bnOorvPr5D6az+1uUG2p+RhoOmmn5FWoA7xAoGBAJFH\nAFCa2biscZqMn8dtP9C3D7Tga6/GsLBOISbWe3ogAqb7+nGH0JSZQTvWOpJL813f\nmWFob7lxANqa4WVTNqx5HB6KC5ZWDwFOjGDJAIn6+Oiv+m1SNrtlI4cPmp+OPY0t\nPURFLM8Iz/anAqoQOuUjEoY1i3odJZcoAadE5JElAoGAYvdb9HlE1AYTiW+778gZ\nUAchaNMFSpDPlCdaH+vr+IUjldlzoghxPDCvqgz08/BLw18INppKAjuV8e8BcEWX\nSzPOa+9Aj8PTcy8Vvlh3QLldW+zolvBmRssLVXRu7+0bc4bfWXeumkNtIDOE+u7g\nPW4Wr5QmO62ultScVhapgIU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-x5j4k@playgatsby.iam.gserviceaccount.com",
+  "client_id": "106566569765167509459",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-x5j4k%40playgatsby.iam.gserviceaccount.com"
+}
