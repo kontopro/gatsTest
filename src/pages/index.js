@@ -13,19 +13,23 @@ const IndexPage = ({data}) => (
     {data.allPost.edges.map(
       ({node}) => 
         <div key={node.id}>
-          <Link to={`/${node.slug}-${node.id}`}>  {`${node.title}`}</Link> {`: first element is ${node._0?node._0.type:`empty`}`}
+          <Link to={`/${node.slug}-${node.id}`}>  {`${node.title}`}</Link> {`: ψωλο`}
         </div>
         )
       }
       <div>
-        <Link to="/page-2/">Go to page 2</Link>
+        <Link to="/app/">Go to app</Link>
       </div>
   </Layout>
 )
 
 export const query = graphql`
 query HomeQuery  {
-  allPost {
+  allPost (
+    sort: {fields: [id]
+    order: DESC
+    }
+  ) {
     edges {
       node {
         id,
