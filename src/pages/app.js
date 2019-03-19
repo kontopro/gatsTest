@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import base, {firebaseApp} from '../components/base';
-import firebase from 'firebase';
-import Login from "../components/Login"
-require('firebase/auth');
+import firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/auth';
+import Login from '../components/Login';
 
 class App extends Component  {
 
