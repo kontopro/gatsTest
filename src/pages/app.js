@@ -8,7 +8,7 @@ class App extends Component  {
 
     state = {
         posts: {},
-        // myUsers:{},
+        //myUsers:{},
         user: null
     }
 
@@ -17,16 +17,24 @@ class App extends Component  {
           context: this,
           state: 'posts'
         });
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+              this.authHandler({ user });
+            }
+        });
       }
-
-    render()    {
       
+    componentWillUnmount() {
+        base.removeBinding(this.postRef);
+      }
+    
+    render()    {      
         return(
-        <div className="app">
-            <p>hi</p>
-            
-        </div>
-    )
+            <div className="app">
+                <p>hi</p>
+            </div>
+        )
     }
 }
+
 export default App
