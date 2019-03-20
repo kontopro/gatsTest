@@ -32,8 +32,8 @@ class App extends Component  {
   
     logout = async () => {
       await firebase.auth().signOut();
-      this.setState({ user: null });
-      base.removeBinding(this.postRef);
+      this.setState({ user: null, posts: {} });
+      
     };
 
     componentDidMount() {
