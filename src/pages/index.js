@@ -18,7 +18,7 @@ const IndexPage = ({data}) => (
         )
       }
       <div>
-        <Link to="/app-simple/">Go to app</Link>
+        <Link to="/app/">Go to app</Link>
       </div>
   </Layout>
 )
