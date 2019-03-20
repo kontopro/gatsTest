@@ -13,7 +13,14 @@ class App extends Component  {
         user: null
     }
     
-    
+    authenticate = provider => {
+    const authProvider = new firebase.auth[`${provider}AuthProvider`]();
+    firebaseApp
+      .auth()
+      .signInWithPopup(authProvider)
+      .then(this.authHandler);
+    };
+  
 
     authHandler = async authData => {
       await this.setState({user: authData.user});
@@ -34,13 +41,6 @@ class App extends Component  {
               this.authHandler({ user });
             }
         });
-        authenticate = provider => {
-          const authProvider = new firebase.auth[`${provider}AuthProvider`]();
-          firebaseApp
-            .auth()
-            .signInWithPopup(authProvider)
-            .then(this.authHandler);
-          };
       }
       
     componentWillUnmount() {
