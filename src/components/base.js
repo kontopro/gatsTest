@@ -5,9 +5,9 @@ import 'firebase/database';
   
 const firebaseApp = (typeof window !== 'undefined')?
   firebase.initializeApp({
-    apiKey: process.env.GATSBY_API_KEY,
-    authDomain: process.env.GATSBY_AUTH_DOMAIN,
-    databaseURL: process.env.GATSBY_DATABASE_URL
+    apiKey: "AIzaSyD3u34u7Hi4tkxpqVWoXJzYDjDuxNvTdDM",
+    authDomain: "playgatsby.firebaseapp.com",
+    databaseURL: "https://playgatsby.firebaseio.com"
   }):{};
 
 const base = (typeof window !== 'undefined')?
