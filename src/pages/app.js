@@ -9,7 +9,7 @@ class App extends Component  {
 
     state = {
         posts: {},
-        //myUsers:{},
+        myUsers:{},
         user: null
     }
     
