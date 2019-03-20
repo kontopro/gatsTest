@@ -12,6 +12,12 @@ class App extends Component  {
         user: null
     }
 
+    componentDidMount() {
+        this.postRef = base.syncState('/posts', {
+          context: this,
+          state: 'posts'
+        });
+      }
 
     render()    {
       
