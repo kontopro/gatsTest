@@ -24,6 +24,10 @@ class App extends Component  {
 
     authHandler = async authData => {
       await this.setState({user: authData.user});
+      this.postRef = base.syncState('/posts', {
+        context: this,
+        state: 'posts'
+      });
     }
   
     logout = async () => {
@@ -32,10 +36,7 @@ class App extends Component  {
     };
 
     componentDidMount() {
-        this.postRef = base.syncState('/posts', {
-          context: this,
-          state: 'posts'
-        });
+        
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
               this.authHandler({ user });
