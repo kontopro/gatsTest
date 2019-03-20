@@ -3,6 +3,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 import base, {firebaseApp} from '../components/base';
+import Login from "../components/Login";
 
 class App extends Component  {
 
@@ -49,6 +50,7 @@ class App extends Component  {
         return(
             <div className="app">
                 <p>hi</p>
+                <Login />
             </div>
         )
     }
