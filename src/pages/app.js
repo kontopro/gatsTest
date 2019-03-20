@@ -49,8 +49,10 @@ class App extends Component  {
     render()    {      
         return(
             <div className="app">
-                <p>hi</p>
+                {this.state.user?
+                <p>hi</p>:
                 <Login authenticate={this.authenticate} />
+                }
             </div>
         )
     }
