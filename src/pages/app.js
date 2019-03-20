@@ -11,6 +11,14 @@ class App extends Component  {
         //myUsers:{},
         user: null
     }
+    
+    authenticate = provider => {
+    const authProvider = new firebase.auth[`${provider}AuthProvider`]();
+    firebaseApp
+      .auth()
+      .signInWithPopup(authProvider)
+      .then(this.authHandler);
+    };
 
     componentDidMount() {
         this.postRef = base.syncState('/posts', {
