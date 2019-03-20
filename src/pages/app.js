@@ -51,7 +51,9 @@ class App extends Component  {
         return(
             <div className="app">
                 {this.state.user?
-                <p>hi</p>:
+                <p>hi..
+                  <button onClick={this.logout}>logout</button>
+                </p>:
                 <Login authenticate={this.authenticate} />
                 }
             </div>
