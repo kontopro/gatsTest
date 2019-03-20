@@ -20,6 +20,15 @@ class App extends Component  {
       .then(this.authHandler);
     };
 
+    authHandler = async authData => {
+      await this.setState({user: authData.user});
+    }
+  
+    logout = async () => {
+      await firebase.auth().signOut();
+      this.setState({ user: null });
+    };
+
     componentDidMount() {
         this.postRef = base.syncState('/posts', {
           context: this,
