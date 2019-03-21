@@ -36,6 +36,7 @@ class App extends Component  {
               this.authHandler({ user });
             }
         });
+        
         this.postRef = base.syncState('/posts', {
           context: this,
           state: 'posts'
