@@ -11,7 +11,7 @@ class App extends Component  {
         posts: {},        
         user: null
     }
-    
+
     authenticate = provider => {
       const authProvider = new firebase.auth[`${provider}AuthProvider`]();
       firebaseApp
@@ -21,37 +21,40 @@ class App extends Component  {
     };  
 
     authHandler = async authData => {
-      await this.setState({user: authData.user});
-      
+      await this.setState({user: authData.user});      
     }
   
     logout = async () => {
       await firebase.auth().signOut();
       this.setState({ user: null });      
-    };
+    }; 
 
+    creator = {};
     componentDidMount() {        
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
               this.authHandler({ user });
             }
         });
-        
         this.postRef = base.syncState('/posts', {
           context: this,
           state: 'posts'
         });
       }
       
-    componentWillUnmount() {
+      componentWillUnmount() {
         base.removeBinding(this.postRef);
       }
-    
-    render()    {      
+      
+      render()    { 
+        
+        const {uid} = {...this.state.user};
+      
         return(
             <div className="app">
-                {this.state.user?
-                <p>hi..
+                {uid?
+                <p>hi sucker {uid}<br/>
+                <br/>
                   <button onClick={this.logout}>logout</button>
                 </p>:
                 <Login authenticate={this.authenticate} />
