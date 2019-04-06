@@ -1,0 +1,11 @@
+table{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 2px solid grey;
+    
+}
+td{
+    border: 1px dashed grey;
+    text-align: center;
+}
