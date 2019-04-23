@@ -42,10 +42,11 @@ function Newuser(props){
         </form>     
     </section>
     )
-    } else {
+    } 
+    else {
         return(
             <div>
-                <p>you cannot create a new user</p>
+                <p>Sorry, you are not authorized to create a new user</p>
             </div>
         )
     }
