@@ -709,7 +709,14 @@ section.logout{
   width: 100%;
   max-width: 920px;
   text-align: center;
-  border: 1px solid red;
+}
+.app-profile>.app-profile-postcard{
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 15px;
+}
+.app-profile>.app-profile-postcard>img{
+  width:100%;
 }
 
 /* new user  */
